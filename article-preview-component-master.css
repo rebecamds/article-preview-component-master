@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+html,
+body {
+    background-color: #edf2f8;
+    height: 100%;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+.site {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+}
+
+.site .article {
+
+    margin: auto;
+    width: 730px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgb(224, 213, 213);
+
+}
+
+@media only screen and (min-width: 600px) {
+    .site .article {
+        display: grid;
+        grid-template-columns: 280px auto;
+    }
+}
+
+.site .article .image {
+    background-image: url('./images/drawers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 280px;
+}
+
+.site .article .content {
+    padding: 38px;
+    text-align: justify left;
+    display: grid;
+    grid-row: 204px auto;
+
+    height: calc(280px - 38px - 38px);
+
+
+}
+
+.site .article .content h2 {
+    font-weight: 700;
+    color: #4b5668;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 130%;
+
+}
+
+.site .article .content h5 {
+    line-height: 140%;
+    color: #999da6;
+    Font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.site .article .content .avatarperfil {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    gap: 20px;
+
+}
+
+
+.site .article .content .avatarperfil .avatar-imagem img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.site .article .content .avatarperfil .avatar-nome {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4b5668;
+    margin-bottom: 5px;
+
+}
+
+.site .article .content .avatarperfil .avatar-data {
+    font-size: 14px;
+    color: #cbcfd6;
+}
+
+.site .article .content .avatarperfil .avatar-share div {
+    background-color: #e6eaf0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.site .article .content .avatarperfil .avatar-share div img {
+    height: 16px;
+    width: 16px;
+    margin: auto
+}
